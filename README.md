@@ -7,9 +7,9 @@
 * 확인
 
 ```shell
-$nodeos
-$cleos
-$keosd
+nodeos
+cleos
+keosd
 ```
 
 ## 2. Download config files
@@ -17,7 +17,7 @@ $keosd
 * 다음 순서대로 원하는 폴더에 설정파일을 clone 한다.
 
 ```shell
-$mkdir eosio
-$cd eosio
-$git clone https://github.com/kein-S/nodeos_setting .
+mkdir eosio
+cd eosio
+git clone https://github.com/kein-S/nodeos_setting .
 ```
