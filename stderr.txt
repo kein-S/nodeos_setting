@@ -1,0 +1,93 @@
+info  2019-01-02T14:18:42.109 thread-0  chain_plugin.cpp:333          plugin_initialize    ] initializing chain plugin
+info  2019-01-02T14:18:42.112 thread-0  block_log.cpp:134             open                 ] Log is nonempty
+info  2019-01-02T14:18:42.112 thread-0  block_log.cpp:161             open                 ] Index is nonempty
+info  2019-01-02T14:18:42.112 thread-0  http_plugin.cpp:422           plugin_initialize    ] configured http to listen on 0.0.0.0:8888
+warn  2019-01-02T14:18:42.112 thread-0  history_plugin.cpp:321        plugin_initialize    ] --filter-on * enabled. This can fill shared_mem, causing nodeos to stop.
+info  2019-01-02T14:18:42.112 thread-0  net_plugin.cpp:2898           plugin_initialize    ] Initialize net plugin
+info  2019-01-02T14:18:42.112 thread-0  net_plugin.cpp:2924           plugin_initialize    ] host: 0.0.0.0 port: 9876 
+info  2019-01-02T14:18:42.113 thread-0  net_plugin.cpp:2995           plugin_initialize    ] my node_id is 5e03d9f7c526a59043a3fbdf4247b3ae3af6a183c8cc74ecb099c0d28d5ecc99
+info  2019-01-02T14:18:42.113 thread-0  http_plugin.cpp:377           operator()           ] configured http with Access-Control-Allow-Origin: *
+info  2019-01-02T14:18:42.113 thread-0  main.cpp:107                  main                 ] nodeos version v1.5.1
+info  2019-01-02T14:18:42.113 thread-0  main.cpp:108                  main                 ] eosio root is /Users/kein/Library/Application Support
+info  2019-01-02T14:18:42.113 thread-0  main.cpp:109                  main                 ] nodeos using configuration file /Users/kein/blockchain/eos/eosio/config/config.ini
+info  2019-01-02T14:18:42.113 thread-0  main.cpp:110                  main                 ] nodeos data directory is /Users/kein/blockchain/eos/eosio/data
+info  2019-01-02T14:18:42.113 thread-0  chain_plugin.cpp:724          plugin_startup       ] starting chain in read/write mode
+info  2019-01-02T14:18:42.113 thread-0  chain_plugin.cpp:728          plugin_startup       ] Blockchain started; head block is #1, genesis timestamp is 2019-01-01T16:20:00.000
+info  2019-01-02T14:18:42.113 thread-0  producer_plugin.cpp:718       plugin_startup       ] producer plugin:  plugin_startup() begin
+info  2019-01-02T14:18:42.113 thread-0  producer_plugin.cpp:740       plugin_startup       ] Launching block production for 1 producers at 2019-01-02T14:18:42.113.
+warn  2019-01-02T14:18:42.206 thread-0  transaction_context.cp:108    deadline_timer       ] Using polled checktime; deadline timer too inaccurate: min:6us max:2564us mean:503us stddev:644us
+info  2019-01-02T14:18:42.229 thread-0  producer_plugin.cpp:752       plugin_startup       ] producer plugin:  plugin_startup() end
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:486           plugin_startup       ] start listening for http requests
+info  2019-01-02T14:18:42.229 thread-0  chain_api_plugin.cpp:77       plugin_startup       ] starting chain_api_plugin
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/abi_bin_to_json
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/abi_json_to_bin
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_abi
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_account
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_block
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_block_header_state
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_code
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_code_hash
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_currency_balance
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_currency_stats
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_info
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_producer_schedule
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_producers
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_raw_abi
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_raw_code_and_abi
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_required_keys
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_scheduled_transactions
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_table_by_scope
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_table_rows
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/get_transaction_id
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/push_block
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/push_transaction
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/chain/push_transactions
+info  2019-01-02T14:18:42.229 thread-0  history_api_plugin.cpp:38     plugin_startup       ] starting history_api_plugin
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/history/get_actions
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/history/get_controlled_accounts
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/history/get_key_accounts
+info  2019-01-02T14:18:42.229 thread-0  http_plugin.cpp:554           add_handler          ] add api url: /v1/history/get_transaction
+info  2019-01-02T14:18:42.229 thread-0  net_plugin.cpp:3014           plugin_startup       ] starting listener, max clients is 150
+info  2019-01-02T14:18:42.515 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 000000024b6edd63... #2 @ 2019-01-02T14:18:42.500 signed by eosio [trxs: 0, lib: 0, confirmed: 0]
+info  2019-01-02T14:18:43.031 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000003583c8d92... #3 @ 2019-01-02T14:18:43.000 signed by eosio [trxs: 0, lib: 2, confirmed: 0]
+info  2019-01-02T14:18:43.505 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000004bc1abddb... #4 @ 2019-01-02T14:18:43.500 signed by eosio [trxs: 0, lib: 3, confirmed: 0]
+info  2019-01-02T14:18:44.002 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000005f2567871... #5 @ 2019-01-02T14:18:44.000 signed by eosio [trxs: 0, lib: 4, confirmed: 0]
+info  2019-01-02T14:18:44.505 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000006d9d16c03... #6 @ 2019-01-02T14:18:44.500 signed by eosio [trxs: 0, lib: 5, confirmed: 0]
+info  2019-01-02T14:18:45.005 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 000000072cb7c783... #7 @ 2019-01-02T14:18:45.000 signed by eosio [trxs: 0, lib: 6, confirmed: 0]
+info  2019-01-02T14:18:45.504 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000008c1c3fbdd... #8 @ 2019-01-02T14:18:45.500 signed by eosio [trxs: 0, lib: 7, confirmed: 0]
+info  2019-01-02T14:18:46.005 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000000916800e6e... #9 @ 2019-01-02T14:18:46.000 signed by eosio [trxs: 0, lib: 8, confirmed: 0]
+info  2019-01-02T14:18:46.505 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000000af860dc00... #10 @ 2019-01-02T14:18:46.500 signed by eosio [trxs: 0, lib: 9, confirmed: 0]
+info  2019-01-02T14:18:47.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000000bc915fce3... #11 @ 2019-01-02T14:18:47.000 signed by eosio [trxs: 0, lib: 10, confirmed: 0]
+info  2019-01-02T14:18:47.200 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000000cf81f1616... #12 @ 2019-01-02T14:18:47.500 signed by eosio [trxs: 0, lib: 11, confirmed: 0]
+info  2019-01-02T14:18:48.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000000d1429c3cf... #13 @ 2019-01-02T14:18:48.000 signed by eosio [trxs: 0, lib: 12, confirmed: 0]
+info  2019-01-02T14:18:48.501 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000000e2eb90e82... #14 @ 2019-01-02T14:18:48.500 signed by eosio [trxs: 0, lib: 13, confirmed: 0]
+info  2019-01-02T14:18:49.003 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000000f985bf6c8... #15 @ 2019-01-02T14:18:49.000 signed by eosio [trxs: 0, lib: 14, confirmed: 0]
+info  2019-01-02T14:18:49.505 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000010476cc4a8... #16 @ 2019-01-02T14:18:49.500 signed by eosio [trxs: 0, lib: 15, confirmed: 0]
+info  2019-01-02T14:18:50.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 000000115136bc22... #17 @ 2019-01-02T14:18:50.000 signed by eosio [trxs: 0, lib: 16, confirmed: 0]
+info  2019-01-02T14:18:50.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001293ea130b... #18 @ 2019-01-02T14:18:50.500 signed by eosio [trxs: 0, lib: 17, confirmed: 0]
+info  2019-01-02T14:18:51.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000013427d5d23... #19 @ 2019-01-02T14:18:51.000 signed by eosio [trxs: 0, lib: 18, confirmed: 0]
+info  2019-01-02T14:18:51.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001426082252... #20 @ 2019-01-02T14:18:51.500 signed by eosio [trxs: 0, lib: 19, confirmed: 0]
+info  2019-01-02T14:18:52.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 000000150dfde51a... #21 @ 2019-01-02T14:18:52.000 signed by eosio [trxs: 0, lib: 20, confirmed: 0]
+info  2019-01-02T14:18:52.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001645437bea... #22 @ 2019-01-02T14:18:52.500 signed by eosio [trxs: 0, lib: 21, confirmed: 0]
+info  2019-01-02T14:18:53.001 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001740c02723... #23 @ 2019-01-02T14:18:53.000 signed by eosio [trxs: 0, lib: 22, confirmed: 0]
+info  2019-01-02T14:18:53.204 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 000000189ec1b93d... #24 @ 2019-01-02T14:18:53.500 signed by eosio [trxs: 0, lib: 23, confirmed: 0]
+info  2019-01-02T14:18:54.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001967436235... #25 @ 2019-01-02T14:18:54.000 signed by eosio [trxs: 0, lib: 24, confirmed: 0]
+info  2019-01-02T14:18:54.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001a6fa1dcf2... #26 @ 2019-01-02T14:18:54.500 signed by eosio [trxs: 0, lib: 25, confirmed: 0]
+info  2019-01-02T14:18:55.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001bb7959130... #27 @ 2019-01-02T14:18:55.000 signed by eosio [trxs: 0, lib: 26, confirmed: 0]
+info  2019-01-02T14:18:55.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001c6a4330a5... #28 @ 2019-01-02T14:18:55.500 signed by eosio [trxs: 0, lib: 27, confirmed: 0]
+info  2019-01-02T14:18:56.000 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001d815444c6... #29 @ 2019-01-02T14:18:56.000 signed by eosio [trxs: 0, lib: 28, confirmed: 0]
+info  2019-01-02T14:18:56.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001e3607e1d7... #30 @ 2019-01-02T14:18:56.500 signed by eosio [trxs: 0, lib: 29, confirmed: 0]
+info  2019-01-02T14:18:57.001 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 0000001f72cf077f... #31 @ 2019-01-02T14:18:57.000 signed by eosio [trxs: 0, lib: 30, confirmed: 0]
+info  2019-01-02T14:18:57.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 000000206df0f221... #32 @ 2019-01-02T14:18:57.500 signed by eosio [trxs: 0, lib: 31, confirmed: 0]
+info  2019-01-02T14:18:58.001 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000021d8efecdc... #33 @ 2019-01-02T14:18:58.000 signed by eosio [trxs: 0, lib: 32, confirmed: 0]
+info  2019-01-02T14:18:58.500 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000022001a7c48... #34 @ 2019-01-02T14:18:58.500 signed by eosio [trxs: 0, lib: 33, confirmed: 0]
+info  2019-01-02T14:18:59.001 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000023cd86357d... #35 @ 2019-01-02T14:18:59.000 signed by eosio [trxs: 0, lib: 34, confirmed: 0]
+info  2019-01-02T14:18:59.201 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000024d1081878... #36 @ 2019-01-02T14:18:59.500 signed by eosio [trxs: 0, lib: 35, confirmed: 0]
+info  2019-01-02T14:19:00.001 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000025294c8df9... #37 @ 2019-01-02T14:19:00.000 signed by eosio [trxs: 0, lib: 36, confirmed: 0]
+info  2019-01-02T14:19:00.501 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000026837adbb5... #38 @ 2019-01-02T14:19:00.500 signed by eosio [trxs: 0, lib: 37, confirmed: 0]
+info  2019-01-02T14:19:01.049 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 00000027c461d72d... #39 @ 2019-01-02T14:19:01.000 signed by eosio [trxs: 0, lib: 38, confirmed: 0]
+info  2019-01-02T14:19:01.501 thread-0  producer_plugin.cpp:1494      produce_block        ] Produced block 000000288c7b4c83... #40 @ 2019-01-02T14:19:01.500 signed by eosio [trxs: 0, lib: 39, confirmed: 0]
+info  2019-01-02T14:19:01.534 thread-0  net_plugin.cpp:3046           plugin_shutdown      ] shutdown..
+info  2019-01-02T14:19:01.534 thread-0  net_plugin.cpp:3049           plugin_shutdown      ] close acceptor
+info  2019-01-02T14:19:01.534 thread-0  net_plugin.cpp:3052           plugin_shutdown      ] close 0 connections
+info  2019-01-02T14:19:01.534 thread-0  net_plugin.cpp:3060           plugin_shutdown      ] exit shutdown
