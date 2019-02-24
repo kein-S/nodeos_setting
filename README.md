@@ -83,6 +83,8 @@ private key 보관 / private key 를 이용한 sign 제공
 
 ## 계정 생성
 * Account name 규칙: 알파벳소문자, 1~5, .
+* 생성해줄 사람이 존재해야함.
+* Private chain 에서는 직접 eosio 의 계정으로 다른 계정을 생성 가능하다.
 
 1. eosio 계정의 private key import [링크](https://developers.eos.io/eosio-cleos/reference#cleos-wallet-import)
 
@@ -209,6 +211,35 @@ p2p-peer-address: {funandnewbp2 의 IP 주소}:{포트}
 p2p-peer-address: {funandnewbp3 의 IP 주소}:{포트}
 ```
 
+11. 토큰 제작 / 발행 / 테스트 실습
+>주의!!
+```shell
+cleos -u {노드IP:포트} 명령어
+```
+를 사용해야함.
+
+## Smart contract
+
+### Smart contract 제작
+```shell
+cd eosionode/contracts/door
+eosio-cpp -abigen door.cpp -o door.wasm
+```
+
+### Smart contract 배포
+
+* 계정생성
+doortestdoor
+
+```shell
+cleos -u {노드IP:포트} set contract {생성계정} {절대경로/eosnode/contract/door} -p {생성계정}@active
+```
+
+### Smart contract  테스트
+```shell
+cleos -u {노드IP:포트} push action doortestdoor enter '["funandnewbp1"]' -p funandnewbp1@active //실행됨.
+cleos -u {노드IP:포트} push action doortestdoor enter '["funandnewbp0"]' -p funandnewbp1@active //권한이 없음.
+```
 
 
 ## Q & A
