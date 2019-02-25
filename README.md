@@ -171,7 +171,7 @@ rm -rf ./data
 ./start.sh
 ```
 
-3. `funandnewbp0` 계정 생성
+3. `funandnewbp1` 계정 생성
 * 지갑생성
 * eosio 계정의 private key import
 * cleos 를 이용해서 계정생성
@@ -180,8 +180,8 @@ rm -rf ./data
 
 5. config.ini 수정
 ```
-producer-name = funandnewbp0
-signature-provider = {funandnewbp0의 퍼블릭키}=KEY:{funandnewbp0의 프라이빗키}
+producer-name = funandnewbp1
+signature-provider = {funandnewbp1의 퍼블릭키}=KEY:{funandnewbp1의 프라이빗키}
 http-server-address = {IP 주소}:{포트}
 ```
 
@@ -191,9 +191,9 @@ http-server-address = {IP 주소}:{포트}
 
 8. `funandnewbp1`, `funandnewbp2`, `funandnewbp3` ... 생성.
 * 각자의 서버에서 키패어 생성
-* 퍼블릭키를 `funandnewbp0` 에게 알려주어 계정 생성
+* 퍼블릭키를 `funandnewbp1` 에게 알려주어 계정 생성
 * IP 주소 공유
-* `funandnewbp0`와 마찬가지로 config.ini 수정
+* `funandnewbp1`와 마찬가지로 config.ini 수정
 * 서로의 IP 주소를 config.ini 하단에 기록
 ```
 p2p-peer-address: {funandnewbp1 의 IP 주소}:{포트}
@@ -228,7 +228,7 @@ cleos -u {노드IP:포트} set contract {생성계정} {절대경로/eosnode/con
 ### Smart contract  테스트
 ```shell
 cleos -u {노드IP:포트} push action doortestdoor enter '["funandnewbp1"]' -p funandnewbp1@active //실행됨.
-cleos -u {노드IP:포트} push action doortestdoor enter '["funandnewbp0"]' -p funandnewbp1@active //권한이 없음.
+cleos -u {노드IP:포트} push action doortestdoor enter '["funandnewbp2"]' -p funandnewbp1@active //권한이 없음.
 ```
 
 
