@@ -98,20 +98,20 @@ private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 ```shell
 cleos wallet create -n testwallet --to-console
 cleos wallet import --private-key 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
-cleos wallt unlock -n testwallet
+cleos wallet unlock -n testwallet
 ```
 
 2. `cleos` 를 이용한 계정 생성 [링크](https://developers.eos.io/eosio-cleos/reference#cleos-create-account)
 
 * 사용할 키패어 생성
 ```shell
-cleos create key
+cleos create key --to-console
 ```
 
-* `funandnewbp0` 계정을 생성해본다.
+* `funandnewbp1` 계정을 생성해본다.
 ```shell
 cleos create account [OPTIONS] creator name OwnerKey ActiveKey -p eosio
-cleos create account eosio funandnewbp0 {Pubkey} {Pubkey} -p eosio
+cleos create account eosio funandnewbp1 {Pubkey} {Pubkey} -p eosio
 ```
 
 * `funandnewbp1` 계정을 생성해본다.
@@ -144,13 +144,13 @@ cleos push action eosio.token create '["eosio", "1000000000.0000 EOS"]' -p eosio
 
 6. 토큰 발행
 ```shell
-cleos push action eosio.token issue '[ "funandnewbp0", "10000.0000 EOS", "issue" ]' -p eosio@active
-cleos get currency balance eosio.token funandnewbp0 EOS
+cleos push action eosio.token issue '[ "funandnewbp1", "10000.0000 EOS", "issue" ]' -p eosio@active
+cleos get currency balance eosio.token funandnewbp1 EOS
 ```
 
 7. 토큰 전송해보기
 ```shell
-cleos push action eosio.token transfer '["funandnewbp0", "funandnewbp1", "10.0000 EOS", "test"]' -p funandnewbp0@active
+cleos push action eosio.token transfer '["funandnewbp1", "funandnewbp2", "10.0000 EOS", "test"]' -p funandnewbp1@active
 cleos get currency balance eosio.token funandnewbp1 EOS
 ```
 
@@ -166,40 +166,30 @@ rm -rf ./data
 ## EOS Block chain 을 통한 multi-node 구성
 1. genesis block 을 생산할 node 를 정한다.
 
-2. `eosio` 계정에서 사용할 키패어 생성
-```shell
-cleos create key
-```
-
-3. `genesis.json` 수정
-```
-"initial_key": {eosio의 퍼블릭키},
-```
-
-4. node start
+2. node start
 ```shell
 ./start.sh
 ```
 
-5. `funandnewbp0` 계정 생성
+3. `funandnewbp0` 계정 생성
 * 지갑생성
 * eosio 계정의 private key import
 * cleos 를 이용해서 계정생성
 
-6. 노드 정지
+4. 노드 정지
 
-7. config.ini 수정
+5. config.ini 수정
 ```
 producer-name = funandnewbp0
 signature-provider = {funandnewbp0의 퍼블릭키}=KEY:{funandnewbp0의 프라이빗키}
 http-server-address = {IP 주소}:{포트}
 ```
 
-8. 노드 재시작
+6. 노드 재시작
 
-9. genesis.json 배포
+7. genesis.json 배포
 
-10. `funandnewbp1`, `funandnewbp2`, `funandnewbp3` ... 생성.
+8. `funandnewbp1`, `funandnewbp2`, `funandnewbp3` ... 생성.
 * 각자의 서버에서 키패어 생성
 * 퍼블릭키를 `funandnewbp0` 에게 알려주어 계정 생성
 * IP 주소 공유
