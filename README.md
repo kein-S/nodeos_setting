@@ -97,7 +97,7 @@ private key: 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 * 다음을 이용해서 eosio 계정의 private key 를 wallet 에 import 한다.
 ```shell
 cleos wallet create -n testwallet --to-console
-cleos wallet import --private-key 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+cleos wallet import -n testwallet --private-key 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 cleos wallet unlock -n testwallet
 ```
 
